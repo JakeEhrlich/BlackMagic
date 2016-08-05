@@ -3,7 +3,7 @@ version:             0.1.0.0
 synopsis:            makes sure ghc(i) knows about minisat
 description:         Please see README.md
 homepage:            https://github.com/JakeEhrlich/BlackMagic#readme
-license:             BSD3
+license:             MIT
 license-file:        LICENSE
 author:              Jake Ehrlich
 maintainer:          jake.h.ehrlich@gmail.com

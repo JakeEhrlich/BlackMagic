@@ -1,6 +1,6 @@
 name:                BlackMagic
 version:             0.1.0.0
-synopsis:            makes sure ghc(i) knows about minisat
+synopsis:            uses minisat to create a lazy, pure function that finds all solutions to a sat problem 
 description:         Please see README.md
 homepage:            https://github.com/JakeEhrlich/BlackMagic#readme
 license:             MIT
@@ -9,7 +9,7 @@ author:              Jake Ehrlich
 maintainer:          jake.h.ehrlich@gmail.com
 copyright:           2016 Jake Ehrlich
 category:            Algorithms
-build-type:          Simple
+build-type:          Custom
 cabal-version:       >=1.10
 
 library

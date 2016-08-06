@@ -1,4 +1,5 @@
 *.swp
+src/*.swp
 minisat/*.swp
 minisat/libminisat.*
 .DS_Store

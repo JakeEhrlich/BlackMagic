@@ -29,9 +29,9 @@ jsPreConf args config = do
         progInvokeArgs = ["-O3",
                           "minisat/Main.cpp", "minisat/Solver.cpp",
                           "EXPORTED_FUNCTIONS=\"['_newSolverState','_freeSolverState','_solverStateAddClause','_solverStateSolve']\"",
-                          "-o", "minisat/minisat.js"] }
+                          "-o", "minisat/libminisat.js"] }
     runProgramInvocation normal prog
-    preConf simpleUserHooks args config 
+    preConf simpleUserHooks args config
 
 generalPreConf = case buildOS of
     Ghcjs -> jsPreConf

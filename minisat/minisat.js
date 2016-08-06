@@ -28,4 +28,5 @@ function solverStateSolve(solver, out) {
     for (var i = 0; i < out.length; i++) {
        out[i] = intHeap[i];
     }
+    return ret
 }

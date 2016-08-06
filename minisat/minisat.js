@@ -22,6 +22,10 @@ function solverStateSolve(solver, out) {
     var dataHeap = new Uint8Array(Module.HEAPU8.buffer, dataPtr, nDataBytes);
     dataHeap.set(new Uint8Array(data.buffer));
     var ret = c_solverStateSolve(solver, dataHeap.buffer);
-    //so now somehow we need to translate back so we can add things to out
-    //yea this needs to be added
+    //make a new view of the memory as an integer
+    var intHeap = new Int32Array(Module.HEAP32.buffer, dataPtr, nDataBytes);
+    //copy this to the output
+    for (var i = 0; i < out.length; i++) {
+       out[i] = intHeap[i];
+    }
 }
